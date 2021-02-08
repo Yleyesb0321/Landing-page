@@ -1,0 +1,20 @@
+{
+  "name": "landing-page",
+  "version": "1.0.0",
+  "description": "Mi primer Landing Page ",
+  "main": "index.html",
+  "scripts": {
+    "dev":"lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://YLeyes@bitbucket.org/YLeyes/landing-page.git"
+  },
+  "author": "Yecid Leyes",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/YLeyes/landing-page#readme",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

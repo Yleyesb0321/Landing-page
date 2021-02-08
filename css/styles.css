@@ -1,0 +1,198 @@
+/*IMPORTANDO FUENTES */
+
+@font-face{
+    font-family:"Roboto" ;
+    src: url(./Fonts/Roboto_Slab/RobotoSlab-Regular.ttf)
+}
+@font-face{
+    font-family:"Crimson" ;
+    src:url(./Fonts/Crimson_Text/CrimsonText-Bold.ttf)
+}
+
+
+
+/* ---- reset ---- */
+body {
+    margin: 0;
+    font: normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas {
+    display: block;
+    
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:transparent;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+.count-particles {
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.js-count-particles {
+    font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+    
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+
+.count-particles {
+    border-radius: 0 0 3px 3px;
+}
+
+/*TOOLS*/
+
+img{
+    max-width: 100%;
+}
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+
+
+/* UTILIZAMOS MIS ESTILOS */
+
+.containerHeader{
+    height: 100vh;
+    background-color: #1dd1a1;
+    background: linear-gradient(90deg , #45aaf2 0% , #a55eea 100% );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containMain{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 8rem;
+    /*Para tarer el texto adelante de las particles*/
+    position: absolute;
+    z-index: 1;
+
+}
+
+.item h1{
+    font-family: "Roboto";
+    font-weight: lighter;
+    line-height: 4rem;
+    font-size: 2.6rem;
+    text-transform: capitalize;
+    color:#fff
+
+}
+.item p{
+    font-size: 16px;
+    color:#fff;
+    font-family: "Roboto";
+    line-height: 2rem;
+    margin: 2rem 0;
+    
+}
+.item button{
+    width: 10rem;
+    height: 3rem;
+    background: transparent;
+    font-family: "Roboto";
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 100px;
+    border: 2px solid #fff;
+    cursor:pointer;
+}
+/*Para alinear la imagen*/
+.item:nth-of-type(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/*NAVEGACION*/
+nav{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 5rem;
+    padding: .5rem 0;
+
+}
+nav .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor .containerL{
+    display: inherit;
+    align-items: center;
+}
+.containerL img{
+    width: 97px;
+    margin-top: 10px;
+}
+.containerLinks{
+    margin: 8rem;
+    position: absolute;
+    z-index: 1;
+    
+}
+.containerLinks a{
+    margin-right: 3rem;
+    color:#fff;
+    font-family: "Roboto";
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    
+}
+.containerR{
+    display: inherit;
+    align-items: center;
+}
+.containerR button{
+    width: 10rem;
+    height: 3rem;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    font-family: "Roboto";
+    font-size: 1.2rem;
+    color:#fff;
+    outline: none;
+    cursor: pointer;
+    z-index: 1;
+
+
+
+}
